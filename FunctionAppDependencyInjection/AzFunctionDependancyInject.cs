@@ -27,6 +27,7 @@ namespace FunctionAppDependencyInjection
             var result = await Task.Run(() => _fakeDB.GetProducts());
             //var result = _fakeDB.GetProducts();
 
+
             return new OkObjectResult(result);
         }
     }
